@@ -14,7 +14,7 @@ build:
 run:
 	docker run --rm \
 	-p 80:80 \
-	${IMAGE_NAME}:${UNIQUE_TAG}
+	${UNIQUE_IMAGE_TAG}
 
 
 publish:
