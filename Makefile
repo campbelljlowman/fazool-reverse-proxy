@@ -11,9 +11,14 @@ build:
 	-t ${UNIQUE_IMAGE_TAG} \
 	.
 
+# -v asdf:/etc/fazool.us/fullchain.pem
+# -v asdf:/etc/fazool.us/privkey.pem
+# -v asdf:/etc/api.fazool.us/fullchain.pem
+# -v asdf:/etc/api.fazool.us/privkey.pem
 run:
 	docker run --rm \
 	-p 80:80 \
+	-p 443:443 \
 	${UNIQUE_IMAGE_TAG}
 
 
